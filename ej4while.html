@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Ejercico 4 While</title>
+</head>
+<body>
+<script type="text/javascript">
+//utiliza un bucle while para pedirle al usuario que ingrese un número entre 1 y 10, y sigue pidiéndolo hasta que lo haga correctamente.
+
+let i=0 //defino la variable let que esta limita su alcance al bloque.
+
+//comienzo con el "while": es un bucle que repite la secuencia de código hasta que la expresión especificada sea falsa
+while (i>1 || i<10) //se definen las condiciones con || que es una expresión OR.
+{
+	i=parseInt(prompt("favor ingresar un valor del 1 al 10: "))
+	//convierto la variable let en entero y le pido al usuario que ingrese valor
+
+	if (i>=1 && i<=10) //se definen las condiciones en un if con el operador && AND.
+	{
+    console.log (i) //si el numero ingresado es válido se va mostrar el valor en la consola
+	}
+    else{
+    	console.log ("número  inválido") //de lo contrario se escribirá por consola ese mensaje
+    	alert("el valor ingresado es incorrecto ingrese otro valor")
+    	//alert sirve para mostrarle un mensaje al usuario unicamente, sin mostrar en consola
+    }
+}
+
+
+</script>
+</body>
+</html>

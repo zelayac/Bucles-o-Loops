@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Ejercicio 2 Do While </title>
+</head>
+<body>
+<script>
+	//Utiliza un bucle do while para pedirle al usuario que ingrese su nombre, y sigue pidiéndolo hasta que ingrese un nombre válido (por ejemplo, que contenga al menos 3 caracteres).
+
+	let nom //primero defino el tipo de variable y su nombre
+
+	do{ //ejecutamos un bucle que se va a ejecutar aunque sea una vez
+	   nom=prompt("por favor ingrese un nombre")//le pedimos al usuario que ingrese el dato a guardar en la variable
+	   console.log("nombre inválido")
+    }
+    while (!nom || nom.length < 4)
+	console.log("nombre valido "+nom)
+
+
+
+</script>
+</body>
+</html>
