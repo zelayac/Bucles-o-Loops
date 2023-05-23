@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio Final</title>
+</head>
+<body>
+    <script>
+        //Crear un programa que solicite al usuario un número entero positivo y muestre en la consola todos los números pares e impares desde el 1 hasta el número ingresado.
+
+        let x = 0
+        let j = 0
+        let numero = 0
+        let suma = 0
+
+        do {
+
+            numero = parseInt(prompt('Ingrese un número'))
+
+        }   while (numero <= 0)
+
+        for (let i = 1; i <= numero; i++){
+            if(i % 2 == 0){
+             console.log(i)
+             }        
+        }
+
+        while(j <= numero){
+            if(j % 2 != 0){
+                 console.log(j);
+            }
+                j++;
+        }
+
+        do {
+            if(x % 2 == 0){
+                 suma = suma + x
+            }
+                x++;
+
+        }   while (x <= numero)
+
+        console.log('La suma es de: '+suma)
+
+    </script>
+</body>
+</html>
